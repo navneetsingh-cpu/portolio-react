@@ -18,6 +18,7 @@ export function Skills() {
         { name: "Angular", level: 100 },
         { name: "React", level: 95 },
         { name: "Next.js", level: 95 },
+        { name: "Node.js", level: 80 },
       ],
     },
     {

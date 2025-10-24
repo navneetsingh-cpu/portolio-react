@@ -18,7 +18,7 @@ export function Experience() {
       description:
         "Developed responsive web applications for clients across various industries using modern frontend technologies.",
       achievements: [],
-      tags: ["Angular", "React", "C#", "TypeScript"],
+      tags: ["Angular", "React", "C#", "Node.js"],
     },
     {
       company: "Publicis Sapient",
@@ -26,7 +26,7 @@ export function Experience() {
       period: "Feb 2021 - Jun 2022",
       description: "Developed FrankinTempleton.com",
       achievements: [],
-      tags: ["Angular", "Graphql", "SCSS", "TypeScript"],
+      tags: ["Angular", "Graphql", "SCSS", "Node.js"],
     },
     {
       company: "Crosscap",

@@ -3,7 +3,7 @@ import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -19,33 +19,39 @@ export function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <div className="space-y-6 animate-fade-in">
           <div className="inline-block px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 mb-4">
-            <span className="text-violet-400">👋 Welcome to my portfolio</span>
+            <span className="text-violet-400">Welcome to my portfolio</span>
           </div>
-          
+
           <h1 className="text-slate-100">
-            Hi, I'm <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">Navneet</span>
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+              Navneet
+            </span>
           </h1>
-          
-          <h2 className="text-slate-100">
-            Frontend Developer
-          </h2>
-          
+
+          <h2 className="text-slate-100">Frontend /Full Stack Developer</h2>
+
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Building interactive web experiences with React, Next.js & Angular. 
-            Passionate about creating pixel-perfect, performant applications that users love.
+            Building interactive web experiences with React, Next.js & Angular.
+            Passionate about creating pixel-perfect, performant applications
+            that users love.
           </p>
 
           <div className="flex gap-4 justify-center pt-4">
-            <Button 
+            <Button
               onClick={scrollToProjects}
-              className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-700 hover:to-blue-700 text-white px-8 shadow-lg shadow-violet-500/30"
+              className="cursor-pointer border-white/20 text-slate-300 hover:bg-white/5"
             >
               View My Work
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-white/20 text-slate-300 hover:bg-white/5"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            <Button
+              variant="outline"
+              className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-700 hover:to-blue-700 text-white px-8 shadow-lg shadow-violet-500/30"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Get In Touch
             </Button>

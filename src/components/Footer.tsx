@@ -2,14 +2,13 @@ import { Heart, Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export function Footer() {
   const socialLinks = [
-    { name: 'GitHub', icon: Github, url: 'https://github.com' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
-    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com' },
-    { name: 'Email', icon: Mail, url: 'mailto:navneet@example.com' }
+    { name: "GitHub", icon: Github, url: "https://github.com/navneetsingh-cpu" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/navneetskahlon/" },
+    { name: "Email", icon: Mail, url: "mailto:navneet17736@gmail.com" },
   ];
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -34,7 +33,10 @@ export function Footer() {
                     className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-500/50 flex items-center justify-center hover:bg-white/10 transition-all duration-300 group"
                     aria-label={social.name}
                   >
-                    <Icon className="text-slate-400 group-hover:text-violet-400 transition-colors" size={18} />
+                    <Icon
+                      className="text-slate-400 group-hover:text-violet-400 transition-colors"
+                      size={18}
+                    />
                   </a>
                 );
               })}
@@ -45,16 +47,18 @@ export function Footer() {
           <div>
             <h3 className="text-slate-100 mb-3">Quick Links</h3>
             <ul className="space-y-2">
-              {['about', 'projects', 'skills', 'experience', 'contact'].map((section) => (
-                <li key={section}>
-                  <button
-                    onClick={() => scrollToSection(section)}
-                    className="text-slate-400 hover:text-violet-400 transition-colors capitalize"
-                  >
-                    {section}
-                  </button>
-                </li>
-              ))}
+              {["about", "projects", "skills", "experience", "contact"].map(
+                (section) => (
+                  <li key={section}>
+                    <button
+                      onClick={() => scrollToSection(section)}
+                      className="text-slate-400 hover:text-violet-400 transition-colors capitalize"
+                    >
+                      {section}
+                    </button>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -62,14 +66,16 @@ export function Footer() {
           <div>
             <h3 className="text-slate-100 mb-3">Built With</h3>
             <div className="flex flex-wrap gap-2">
-              {['React', 'TypeScript', 'Tailwind CSS', 'Shadcn UI'].map((tech) => (
-                <span 
-                  key={tech}
-                  className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-400"
-                >
-                  {tech}
-                </span>
-              ))}
+              {["React", "TypeScript", "Tailwind CSS", "Shadcn UI"].map(
+                (tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-400"
+                  >
+                    {tech}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -79,9 +85,7 @@ export function Footer() {
           <p className="text-slate-400 text-center md:text-left">
             © 2025 Navneet. All rights reserved.
           </p>
-          <p className="text-slate-400 flex items-center gap-2">
-            Crafted with <Heart className="text-red-500" size={16} fill="currentColor" /> using React & Tailwind
-          </p>
+          <p className="text-slate-400 flex items-center gap-2"></p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Code2, Palette, Zap } from "lucide-react";
+import heroImage from '../images/hero-image.webp'; // with import
+
 
 export function About() {
   const highlights = [
@@ -34,7 +36,7 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-blue-500 rounded-2xl blur-2xl opacity-20" />
             <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-2">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjEyMjQwODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={heroImage}
                 alt="Navneet - Frontend Developer"
                 className="rounded-xl w-full h-auto object-cover"
               />

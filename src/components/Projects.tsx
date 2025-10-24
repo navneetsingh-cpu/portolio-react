@@ -5,6 +5,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import project1 from "../images/project1.png"; // with import
 import project2 from "../images/project2.png"; // with import
 import project3 from "../images/project3.webp"; // with import
+import project4 from "../images/project4.png"; // with import
 
 export function Projects() {
   const projects = [
@@ -33,6 +34,14 @@ export function Projects() {
       tags: ["NextJs", "TailwindCSS", "GoogleAPI"],
       demoUrl: "https://google-navneet.vercel.app/",
       githubUrl: "https://github.com/navneetsingh-cpu/google-clone",
+    },
+    {
+      title: "Analytics Dashboard",
+      description: "Analytics Dashboard",
+      image: project4,
+      tags: ["React", "TailwindCSS", "Figma"],
+      demoUrl: "https://analytics-dashboard-177.netlify.app/",
+      githubUrl: "https://github.com/navneetsingh-cpu/dashboard",
     },
   ];
 

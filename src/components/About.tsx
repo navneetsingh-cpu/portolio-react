@@ -1,29 +1,32 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Code2, Palette, Zap } from "lucide-react";
-import heroImage from '../images/hero-image.webp'; // with import
-
+import heroImage from "../images/hero-image.webp"; // with import
 
 export function About() {
   const highlights = [
     {
       icon: Code2,
       title: "Clean Code",
-      description: "Writing maintainable, scalable code following best practices"
+      description:
+        "Writing maintainable, scalable code following best practices",
     },
     {
       icon: Palette,
       title: "UI/UX Focus",
-      description: "Creating beautiful interfaces with attention to detail"
+      description: "Creating beautiful interfaces with attention to detail",
     },
     {
       icon: Zap,
       title: "Performance",
-      description: "Optimizing for speed and exceptional user experience"
-    }
+      description: "Optimizing for speed and exceptional user experience",
+    },
   ];
 
   return (
-    <section id="about" className="py-24 px-6 bg-gradient-to-b from-slate-950 to-slate-900">
+    <section
+      id="about"
+      className="py-24 px-6 bg-gradient-to-b from-slate-950 to-slate-900"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-slate-100 mb-4">About Me</h2>
@@ -47,21 +50,31 @@ export function About() {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-slate-300">
-                I'm a passionate frontend developer with expertise in building modern, 
-                responsive web applications. With a strong foundation in React, Next.js, 
-                and Angular, I transform ideas into elegant, user-friendly interfaces.
+                I'm a passionate frontend developer with expertise in building
+                modern, responsive web applications. With a strong foundation in
+                React, Next.js, and Angular, I transform ideas into elegant,
+                user-friendly interfaces.
               </p>
               <p className="text-slate-400">
-                My approach combines technical excellence with creative problem-solving. 
-                I believe in writing clean, maintainable code and staying up-to-date with 
-                the latest web technologies to deliver exceptional digital experiences.
+                My approach combines technical excellence with creative
+                problem-solving. I believe in writing clean, maintainable code
+                and staying up-to-date with the latest web technologies to
+                deliver exceptional digital experiences.
               </p>
             </div>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-3 pt-4">
-              {['React', 'Next.js', 'Angular', 'TypeScript', 'Tailwind CSS', 'UI/UX'].map((tech) => (
-                <span 
+              {[
+                "React",
+                "Next.js",
+                "Angular",
+                "TypeScript",
+                "Tailwind CSS",
+                "UI/UX",
+                "C#",
+              ].map((tech) => (
+                <span
                   key={tech}
                   className="px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 text-slate-300"
                 >
@@ -77,7 +90,7 @@ export function About() {
           {highlights.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div 
+              <div
                 key={index}
                 className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-500/50 transition-all duration-300 group"
               >

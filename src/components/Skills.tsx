@@ -28,7 +28,7 @@ export function Skills() {
         { name: "TypeScript", level: 100 },
         { name: "JavaScript (ES6+)", level: 100 },
         { name: "HTML5/CSS3", level: 100 },
-        { name: "SASS/SCSS", level: 100 },
+        { name: "C#", level: 85 },
       ],
     },
     {
